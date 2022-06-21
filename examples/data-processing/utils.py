@@ -123,6 +123,7 @@ def add_custom_sig(df_phys, signal1, signal2, function, new_signal):
     import pandas as pd
 
     try:
+        # row 값이 Signal 이면서 값이 signal 1인값의 Physical Value 를 바꿈
         s1 = df_phys[df_phys["Signal"] == signal1]["Physical Value"].rename(signal1)
         s2 = df_phys[df_phys["Signal"] == signal2]["Physical Value"].rename(signal2)
 
