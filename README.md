@@ -7,7 +7,14 @@ This project includes Python and MATLAB examples of how to process MF4 log files
 ---
 
 ```
-cd /home/test/api-examples/ canedge-influxdb-writer-master
+/home/test/api-examples/ canedge-influxdb-writer-master
+
+안의 inputs.py 의 DBC 와 MF4 파일을 원하는대로 수정한뒤
+
+linux 는 source env/bin/activate 로
+ virtual environment 에 진입한뒤
+ python3 main.py 로 데이터 전송
+
 
 ```
 
