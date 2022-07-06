@@ -1,6 +1,6 @@
 # -----------------------------------------------
 # specify your InfluxDB details
-influx_bucket = "test"
+influx_bucket = "test1"
 token = "F2i3a8rNog_lcRgHeU-5w4MKQX7xhsQHpYx_BobGinOTpeqKBNyybNgjS0C7Ws9L4_TRrZGpJB5uFBMk5Sg4Ag=="
 influx_url = "http://localhost:8086/"
 org_id = "fffecc1fa476a203"
@@ -15,7 +15,7 @@ dbc_paths = ["dbc_files/CSS-Electronics-OBD2-v1.4.dbc"]
 signals = []
 
 # specify resampling frequency ("": no resampling)
-res = "5S"
+res = "1S"
 
 # -----------------------------------------------
 # specify whether to load data from S3 (and add server details if relevant)
@@ -31,7 +31,7 @@ endpoint = "s3_endpoint"
 dynamic = True
 default_start = "2022-01-01 00:00:00"
 # offsets data to start at 'today - days_offset'. Set to None to use original timestamps
-days_offset = 1
+days_offset = None
 
 # if you're using data encryption, you can add the password below
 pw = {"default": "password"}
