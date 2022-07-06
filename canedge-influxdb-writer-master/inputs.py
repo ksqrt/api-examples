@@ -7,11 +7,11 @@ org_id = "fffecc1fa476a203"
 
 # -----------------------------------------------
 # specify devices to process from local disk via ["folder/device_id"] or S3 via ["bucket/device_id"]
-devices = ["LOG/2F6913DB"]
+devices = ["LOG/958D2219"]
 
 # -----------------------------------------------
 # specify DBC paths and a list of signals to process ([]: include all signals)
-dbc_paths = ["dbc_files/canmod-gps.dbc"]
+dbc_paths = ["dbc_files/CSS-Electronics-OBD2-v1.4.dbc"]
 signals = []
 
 # specify resampling frequency ("": no resampling)
@@ -30,7 +30,8 @@ endpoint = "s3_endpoint"
 # if dynamic = True, data is loaded dynamically based on most recent data in InfluxDB - else default_start is used
 dynamic = True
 default_start = "2022-01-01 00:00:00"
-days_offset = 1  # offsets data to start at 'today - days_offset'. Set to None to use original timestamps
+# offsets data to start at 'today - days_offset'. Set to None to use original timestamps
+days_offset = 1
 
 # if you're using data encryption, you can add the password below
 pw = {"default": "password"}
