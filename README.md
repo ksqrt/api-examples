@@ -6,7 +6,8 @@ This project includes Python and MATLAB examples of how to process MF4 log files
 
 ---
 
-```cd /home/test/api-examples/ canedge-influxdb-writer-master
+```
+cd /home/test/api-examples/ canedge-influxdb-writer-master
 
 ```
 
