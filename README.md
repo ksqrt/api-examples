@@ -1,8 +1,23 @@
-# CAN bus API examples (Python/MATLAB) | CANedge
+# CANedge 데이터 분석
+
+CANedge 데이터 (CANedge log file formats (`MF4`)) 전처리 과정 후 InfluxDB 에 Push 후 Grafana 를 통한 데이터 시각화
 
 This project includes Python and MATLAB examples of how to process MF4 log files with CAN/LIN data from your [CANedge](https://www.csselectronics.com/) data loggers. Most examples focus on the use of our Python API modules (`canedge_browser`, `mdf_iter`, `can_decoder`) for use with the CANedge log file formats (`MF4`, `MFC`, `MFE`, `MFM`). However, you'll also find other script examples incl. for the asammdf Python API, MATLAB, S3 and more.
 
-# 실행방법
+## 개발환경
+
+---
+
+Python 3.8.10
+Docker 20.10.17
+influxdb
+grafana
+
+## 파일구조
+
+---
+
+<!-- ## 실행방법
 
 ---
 
@@ -16,7 +31,7 @@ linux 는 source env/bin/activate 로
  python3 main.py 로 데이터 전송
 
 
-```
+``` -->
 
 ## Features
 
