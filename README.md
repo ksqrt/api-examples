@@ -1,8 +1,7 @@
-# CANedge 데이터 분석
+# CANedge 데이터 분석 및 시각화
 
-CANedge 데이터 (CANedge log file formats (`MF4`)) 전처리 과정 후 InfluxDB 에 Push 후 Grafana 를 통한 데이터 시각화
-
-This project includes Python and MATLAB examples of how to process MF4 log files with CAN/LIN data from your [CANedge](https://www.csselectronics.com/) data loggers. Most examples focus on the use of our Python API modules (`canedge_browser`, `mdf_iter`, `can_decoder`) for use with the CANedge log file formats (`MF4`, `MFC`, `MFE`, `MFM`). However, you'll also find other script examples incl. for the asammdf Python API, MATLAB, S3 and more.
+CSS-Electronics사의 파이썬 API 를 활용해 CANedge 데이터 전처리
+이후 InfluxDB 와 Grafana 를 통한 데이터 시각화
 
 ## 개발환경
 
@@ -116,3 +115,8 @@ You can contact us at CSS Electronics below:
 
 - [www.csselectronics.com](https://www.csselectronics.com)
 - [Contact form](https://www.csselectronics.com/pages/contact-us)
+
+## 참고
+
+https://github.com/CSS-Electronics/api-examples  
+https://github.com/CSS-Electronics/canedge-influxdb-writer
