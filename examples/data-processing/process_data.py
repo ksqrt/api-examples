@@ -16,7 +16,8 @@ pw = {"default": "password"}
 # setup filesystem (local/S3), load DBC files and list log files for processing
 fs = setup_fs(s3=False, key="", secret="", endpoint="", passwords=pw)
 db_list = load_dbc_files(dbc_paths)
-log_files = canedge_browser.get_log_files(fs, devices, start_date=start, passwords=pw)
+log_files = canedge_browser.get_log_files(
+    fs, devices, start_date=start, passwords=pw)
 print(f"Found a total of {len(log_files)} log files")
 
 # --------------------------------------------
@@ -44,6 +45,7 @@ def ratio(s1, s2):
 
 # --------------------------------------------
 # example: resample and restructure data (parameters in columns)
-df_phys_join = restructure_data(df_phys=df_phys_all, res="1S", full_col_names=True)
+df_phys_join = restructure_data(
+    df_phys=df_phys_all, res="1S", full_col_names=True)
 df_phys_join.to_csv("output_joined.csv")
 print("\nConcatenated DBC decoded data:\n", df_phys_join)
