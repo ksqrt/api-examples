@@ -24,7 +24,7 @@ docker run -d --net=influxdb --name=grafana -p 3000:3000 grafana/grafana
 docker run -d --net=influxdb --name=influxdb -p 8086:8086 influxdb
 ```
 
-직접 설치 (linux)
+or 직접 설치
 
 ```
 # 1. Grafana 설치
