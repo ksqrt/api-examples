@@ -39,16 +39,18 @@ sudo dpkg -i grafana_7.5.2_amd64.deb
 
 # 실행
 sudo service grafana-server start
-# 실행 상태 확인
 sudo service grafana-server status
 
 # 2. influxdb 설치
 
-wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.4-amd64.deb sudo dpkg -i influxdb2-2.0.4-amd64.deb    
+wget https://dl.influxdata.com/influxdb/releases/influxdb2-2.0.4-amd64.deb
+sudo dpkg -i influxdb2-2.0.4-amd64.deb    
 sudo service influxdb start
 sudo service influxdb status
 
 ```
+
+이후 종료하고싶으면 sudo service influxdb stop로 종료한다
 
 ## localhost 서버확인
 
@@ -69,7 +71,7 @@ sudo service influxdb status
 ---
 
 0. [http://localhost:8086](http://localhost:8086) 에 접속한다
-1. influx db의 id/pw 를 직접 설정해준다.
+1. influx db의 id/pw 를 직접 설정해준다
 2. Load Data 의 Token 값을 저장한다
 3. 프로필 사진 클릭후 About 에서 org id 값을 저장한다
 4. 새 버킷을 하나 만든다
